@@ -9,3 +9,8 @@ http://172.22.27.1 （广大内网）
 By the way，广大OJ的袍泽兄弟是[ACdream Online Judge](http://acdream.info/)
 
 这是Team509的广州大学在线判题系统题集
+
+# 帮助
+
+- **新手指引** https://www.gzhuacm.cn/topic/100
+- **资源站点** http://172.22.27.1/Downloads/ （广大内网）
