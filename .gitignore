@@ -1,2 +1,6 @@
+# Personal Environment Settings
 .vscode/*
+
+# Test File
 *.exe
+a.c
