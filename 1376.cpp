@@ -5,13 +5,7 @@
  */
 
 /**
- * 题目分析：
- * 可以思考朴素解法，也可以在数学上优化算法。
- * 【朴素解法】经典递归问题，要求第n行，必须先求出(n-1)行。
- * 【数学优化】杨辉三角的第n行是(n-1)次二项式的二项式系数的组合。
- * 
- * 由于数学优化需要计算大数的阶乘，计算结果将超出C++里unsigned long long的范围，
- * 故使用Java实现较为简便。
+ * 题目分析：经典数学问题，一个整数是否能被分为两个偶数的和？
  * 
  */
 
@@ -21,26 +15,25 @@ using namespace std;
 
 int main()
 {
-    unsigned long long expansion[61][61] = {{0}, {0, 1}};
-    for(int line=2; line<=60; line++)
+    int w;
+    while(cin>>w)
     {
-        for(int place=1; place<=line; place++)
-        {
-            expansion[line][place] = expansion[line-1][place-1] + expansion[line-1][place];
+        if(w%4){
+            if(!(w%2)){
+                int a = w/2;
+                if((a-1)>0){
+                    cout << "YES" << endl;
+                }else{
+                    cout << "NO" << endl;
+                }
+            }else{
+                cout << "NO" << endl;
+            }
+        }
+        else{
+            cout << "YES" << endl;
         }
     }
 
-    int line;
-    while(cin>>line)
-    {
-        for(int place=1; place<=line; place++)
-        {
-            cout << expansion[line][place];
-            if(place!=line){
-                cout << " ";
-            }else{
-                cout << endl;
-            }
-        }
-    }
+    return 0;
 }
