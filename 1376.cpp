@@ -19,34 +19,28 @@
 
 using namespace std;
 
-void get_expansion(int[], int);
-int get_coefficient(int n, int k);
-
 int main()
 {
-    int line, frequency, set[61];
+    unsigned long long expansion[61][61] = {{0}, {0, 1}};
+    for(int line=2; line<=60; line++)
+    {
+        for(int place=1; place<=line; place++)
+        {
+            expansion[line][place] = expansion[line-1][place-1] + expansion[line-1][place];
+        }
+    }
+
+    int line;
     while(cin>>line)
     {
-        frequency = line - 1;
-        coefficient(set, frequency);
-        for(int i=1; i<= line; i+=){
-            cout << set[i];
+        for(int place=1; place<=line; place++)
+        {
+            cout << expansion[line][place];
+            if(place!=line){
+                cout << " ";
+            }else{
+                cout << endl;
+            }
         }
-        cout << endl;
     }
-    
-    return 0;
-}
-
-void get_expansion(int set[], int frequency)
-{
-    for(int i=1; i < frequency + 1; i++)
-    {
-        set[i] = get_coefficient(frequency+1, i-1);
-    }
-}
-
-int get_coefficient(int n, int k)
-{
-    
 }
