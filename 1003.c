@@ -11,12 +11,6 @@
 
 #include <stdio.h>
 
-int larger(int a)
-{
-    if(a!=9) return a+1;
-    else return 9;
-}
-
 int main(void)
 {
 
