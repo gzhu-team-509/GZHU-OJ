@@ -4,3 +4,5 @@
 # Test File
 *.exe
 a.c
+in.txt
+out.txt
