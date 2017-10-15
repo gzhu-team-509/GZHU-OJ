@@ -9,8 +9,7 @@
  * 
  */
 
-
-/* !!! WA !!!*/
+/* WRONG ANSWER */
 #include <stdio.h>
 
 int is_greater(int [], int[], int length);

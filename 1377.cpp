@@ -12,11 +12,11 @@
  * 
  */
 
-#include <iostream>
+/* UGLY HACK */
+ #include <iostream>
 
 using namespace std;
 
-/* !!!ugly hack!!! */
 int main()
 {
     int n, k;
