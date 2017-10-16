@@ -2,7 +2,12 @@
 .vscode/*
 
 # Test File
-*.exe
 a.c
+a.cpp
+
+# Test Date
 in.txt
 out.txt
+
+# Binary Files for Test
+*.exe
