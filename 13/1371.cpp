@@ -1,10 +1,4 @@
 /**
- * 链接：
- * https://www.gzhuacm.cn/problem?pid=1371
- *
- */
-
-/**
  * 题目分析：
  * 可以思考朴素解法，也可以在数学上优化算法。
  * 【朴素解法】经典递归问题，要求第n行，必须先求出(n-1)行。
@@ -16,13 +10,12 @@
  */
 
 #include <iostream>
-
 using namespace std;
 
 int main()
 {
     unsigned long long expansion[61][61] = {{0}, {0, 1}};
-    for(int line=2; line<=60; line++)
+    for(int line = 2; line <= 60; line++)
     {
         for(int place=1; place<=line; place++)
         {
@@ -31,7 +24,7 @@ int main()
     }
 
     int line;
-    while(cin>>line)
+    while(cin >> line)
     {
         for(int place=1; place<=line; place++)
         {

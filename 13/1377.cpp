@@ -13,43 +13,45 @@
  */
 
 /* UGLY HACK */
- #include <iostream>
-
+#include <iostream>
 using namespace std;
 
 int main()
 {
     int n, k;
-    while(cin>>n>>k)
+    while (cin >> n >> k)
     {
         int count = 0, now;
-        while(n--)
+        while (n--)
         {
             cin >> now;
-            if(now>0) 
-            {
+            if (now > 0) {
                 count++;
-            }else{
-                while(n--){
+            }
+            else 
+            {
+                while (n--){
                     // 清空队尾
                     cin >> now;
+                    if (!n) break;
                 }
-                n = 0;  //跳出下次循环
+                n = 0;
                 break;
             }
-            if(!(--k))
+            if (!(--k))
             {
                 break;
             }
         }
         int score = now;  // 临界位置的分数
-        while(n--)
+        while (n--)
         {
             cin >> now;
-            if(now==score) {
+            if (now == score) {
                 count++;
-            }else{
-                while(n--)
+            }
+            else {
+                while (n--)
                 {
                     // 清空队尾
                     cin >> now;

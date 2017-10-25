@@ -9,12 +9,12 @@ int main()
     {
         reverse = 0;
         origin = input;
-        while(input)
+        while (input)
         {
             reverse = reverse * 10 + input % 10;
             input /= 10;
         }
-        if(origin==reverse) cout << "Yes" << endl;
+        if (origin==reverse) cout << "Yes" << endl;
         else cout << "No" << endl;
     }
 

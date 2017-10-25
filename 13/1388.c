@@ -1,8 +1,4 @@
-/**
- * 链接：
- * https://www.gzhuacm.cn/problem?pid=1388
- *
- */
+/* https://www.gzhuacm.cn/problem?pid=1388 */
 
 /**
  * 题目分析：王者之剑Excalibur

@@ -4,11 +4,11 @@ int main(void)
 {
     int line, count, sum, num;
     scanf("%d", &line);
-    while(line--)
+    while (line--)
     {
         scanf("%d", &count);
         sum = 0;
-        while(count--)
+        while (count--)
         {
             scanf("%d", &num);
             sum += num;

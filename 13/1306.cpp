@@ -5,7 +5,7 @@ int main()
 {
     int n;
     cin >> n;
-    while(n--){
+    while (n--){
         cout << "Hello ACM!" << endl;
     }
 

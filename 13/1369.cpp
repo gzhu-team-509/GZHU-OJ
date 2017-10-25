@@ -1,16 +1,9 @@
 /**
- * 链接：
- * https://www.gzhuacm.cn/problem?pid=1369
- *
- */
-
-/**
  * 题目分析：经典递归问题，注意数据应该用何种基本数据类型表示，需要缓存计算结果以优化程序性能
  * 
  */
 
 #include <iostream>
-
 using namespace std;
 
 long long cache[71] = {0, 1, 2};

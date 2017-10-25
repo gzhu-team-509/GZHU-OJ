@@ -1,14 +1,13 @@
 #include <iostream>
-
 using namespace std;
 
 int main()
 {
     int count;
-    while(cin>>count)
+    while (cin>>count)
     {
         long sum = 0, temp;
-        for(int i=0; i<count; i++){
+        for (int i=0; i<count; i++){
             cin >> temp;
             sum += temp;
         }
