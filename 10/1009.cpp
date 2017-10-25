@@ -1,11 +1,4 @@
-/**
- * 链接：
- * https://www.gzhuacm.cn/problem?pid=1009
- *
- */
-
 // 小心数据边界
-
 #include <iostream>
 
 using namespace std;

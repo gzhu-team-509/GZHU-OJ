@@ -1,14 +1,3 @@
-/**
- * 链接：
- * https://www.gzhuacm.cn/problem?pid=1002
- *
- */
-
-/**
- * 题目分析：单词计数
- * 
- */
-
 #include <stdio.h>
 #include <ctype.h>
 

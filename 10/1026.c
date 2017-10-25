@@ -1,14 +1,3 @@
-/**
- * 链接：
- * https://www.gzhuacm.cn/problem?pid=1026
- *
- */
-
-/**
- * 题目分析： 输入输出练习（有毒）
- *
- */
-
 #include <stdio.h>
 
 int main(void)

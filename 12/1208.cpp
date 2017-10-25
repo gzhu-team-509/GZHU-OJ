@@ -1,11 +1,4 @@
-/**
- * 链接：
- * https://www.gzhuacm.cn/problem?pid=1208
- *
- */
-
 #include <iostream>
-
 using namespace std;
 
 int main()

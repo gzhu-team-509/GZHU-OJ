@@ -1,14 +1,3 @@
-/**
- * 链接：
- * https://www.gzhuacm.cn/problem?pid=1003
- *
- */
-
-/**
- * 题目分析：细心，仔细
- * 
- */
-
 /* WRONG ANSWER */
 #include <stdio.h>
 

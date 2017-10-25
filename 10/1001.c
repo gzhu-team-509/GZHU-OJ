@@ -1,14 +1,3 @@
-/**
- * 链接：
- * https://www.gzhuacm.cn/problem?pid=1001
- *
- */
-
-/**
- * 题目分析：分析语境，字符大小写转换
- * 
- */
-
 #include <stdio.h>
 #include <ctype.h>
 

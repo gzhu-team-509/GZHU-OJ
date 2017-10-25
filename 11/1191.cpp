@@ -1,9 +1,3 @@
-/**
- * 链接：
- * https://www.gzhuacm.cn/problem?pid=1191
- *
- */
-
 #include <iostream>
 
 using namespace std;

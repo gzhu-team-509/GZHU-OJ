@@ -1,15 +1,4 @@
-/**
- * 链接：
- * https://www.gzhuacm.cn/problem?pid=1028
- *
- */
-
-/**
- * 题目分析：简单的输入输出练习
- * 
- */
-
- #include <stdio.h>
+#include <stdio.h>
  
 int main(void)
 {
