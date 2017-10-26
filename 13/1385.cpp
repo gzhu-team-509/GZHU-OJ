@@ -1,7 +1,6 @@
 /* https://www.gzhuacm.cn/problem?pid=1385 */
 
 #include <iostream>
-#include <cstring>
 using namespace std;
 
 int main()
