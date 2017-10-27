@@ -1,5 +1,6 @@
 # Personal Environment Settings
 **/.vscode/*
+**/.vs/*
 
 # Source Files for Test
 **/a.c
