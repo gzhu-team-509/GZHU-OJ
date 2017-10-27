@@ -1,4 +1,35 @@
-/* 斐波那契数列数列的通项公式 */
+/* 这里不需要很高的精度，因此利用斐波那契数列数列的通项公式进行计算 */
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+double fibonacci(int);
+
+double cache[103] = { 0 };
+int n;
+
+int main()
+{
+	cout.flags(cout.fixed);
+	cout.precision(3);
+	while (cin >> n)
+	{
+		double res = 0;
+		for (int i = 1; i <= n; i++)
+		{
+			res += fibonacci(i + 2) / fibonacci(i + 1);
+		}
+		cout << res << endl;
+	}
+}
+
+double fibonacci(int i)
+{
+	if (cache[i]) return cache[i];
+	else cache[i] =  (pow((1 + sqrt(5)) / 2, i) - pow((1 - sqrt(5)) / 2, i) ) / sqrt(5);
+	return cache[i];
+}
+
 
 /* 无法得出正确结果，斐波那契数列增长得很快，在给定范围内直接计算效率很低而且超出范围 */
 /*
