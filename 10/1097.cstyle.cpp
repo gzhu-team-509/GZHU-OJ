@@ -1,4 +1,3 @@
-#include <iostream>
 #include <cstdio>
 #include <cctype>
 using namespace std;
@@ -6,7 +5,7 @@ using namespace std;
 /**
  * 如果你使用传统的C语言IO函数，在此题中至少存在3个方面考验你程序的健壮性
  * 
- * 1) “数字”a，b可能由不是空格后换行符的字符隔开
+ * 1) “数字”a，b可能由不是空格或换行符的字符隔开
  * 2) “数字”a，b中间间隔的字符可能不止一个
  * 3) 最后一组数据末尾没有换行符就到达文件末尾
  * 
@@ -18,11 +17,11 @@ using namespace std;
 int main()
 {
     char ch, lst = ' ';
-    long long sum = 0, kase = 0;
+    int sum = 0, kase = 0;
     while (ch = getchar())
     {
         if (ch == EOF) {
-            if (kase % 2) cout << sum << endl;
+            if (kase % 2) printf("%d\n", sum);
             break;
         }
         if (isdigit(ch)) sum += (ch - '0');
@@ -31,7 +30,7 @@ int main()
         {
             if (!isdigit(lst)) continue; // 过滤掉连续的空白字符
             if (kase % 2) {
-                cout << sum << endl;
+                printf("%d\n", sum);
                 sum = 0;
             }
             kase++;
