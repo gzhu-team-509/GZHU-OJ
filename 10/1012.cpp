@@ -29,7 +29,7 @@ int main()
 int to_decimal(char * c)
 {
     int n = 0;
-    for (int i = 0; i < 9; i++)
+    for (int i = 0; i < 8; i++)
     {   
         n += (c[i] - '0') << (7 - i); 
     }
