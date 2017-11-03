@@ -1,3 +1,4 @@
+/* 通过排序数组来实现 */
 #include <iostream>
 #include <cstdio>
 #include <string>
