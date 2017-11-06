@@ -1,4 +1,4 @@
-/* RANK C */
+/* RANK A（与RANK C相同的实现，效率上不低于其他实现） */
 /* 使用优先队列的实现 */
 #include <cstdio>
 #include <iostream>
@@ -7,8 +7,8 @@
 #include <queue>
 using namespace std;
 
-int vis[11], weight[11];
-priority_queue<int> bags[11];
+int vis[101], weight[101];
+priority_queue<int> bags[101];
 
 void init();
 
@@ -85,7 +85,7 @@ int main()
 
 void init()
 {
-    for (int i = 1; i <= 10; i++)
+    for (int i = 1; i <= 100; i++)
     {
         vis[i] = i;
         weight[i] = 0;
