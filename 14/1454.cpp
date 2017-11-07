@@ -1,9 +1,8 @@
-/* INCOMPLETE */
-
 /** 
  * RANK EX
  * 
  * 使用STL超时，需要手写左偏树。目前对STL能够胜任的数据量还没有很清楚的认识。
+ * 这题不能使用优先队列的原因应该是优先队列mix操作太慢
  * 如果想在高级别的比赛中达到最佳效率，不能依赖STL。
  * 平时应该熟练掌握基本数据结构的写法。
  * 
@@ -13,20 +12,34 @@
  * 
 **/
 #include <cstdio>
+#include <cstring>
+#include <iostream>
 #include <algorithm>
+using namespace std;
+
+const int MAXN = 3010005;
+
+struct Node
+{
+    int val;
+    bool operator < (const Node &rhs) const
+    {
+        return val > rhs.val;
+    }
+};
 
 struct LeftTree
 {
-    const int MAXN = 3010005;
-
     int tot;
-    int v[MAXN], l[MAXN], r[MAXN], d[MAXN];
+    Node v[MAXN]; 
+    int l[MAXN], r[MAXN], d[MAXN];
 
     int Init(int x)
     {
         tot++;
-        v[tot] = x;
+        v[tot].val = x;
         l[tot] = r[tot] = d[tot] = 0;
+        return tot;
     }
 
     int Insert(int x, int y)
@@ -36,7 +49,7 @@ struct LeftTree
 
     int Top(int x)
     {
-        return v[x];
+        return v[x].val;
     }
 
     int Pop(int x)
@@ -54,9 +67,63 @@ struct LeftTree
         d[x] = d[r[x]] + 1;
         return x;
     }
-};
+} tree;
+
+/* 用长度为cnt的数组balls建堆 */
+int BuildHeap(int cnt, int balls[])
+{
+    int top = tree.Init(balls[0]);
+    for (int i = 1; i < cnt; i++)
+    {
+        int nxt = tree.Init(balls[i]);
+        top = tree.Merge(top, nxt);
+    }
+    return top;
+}
 
 int main()
 {
-
+    int bgcnt, oprt;
+    while (scanf("%d%d", &bgcnt, &oprt) == 2)
+    {
+        tree.tot = 0;
+        int bags[bgcnt + 1] = { 0 };
+        for (int i = 1; i <= bgcnt; i++) {
+            int cnt;
+            int balls[1005];
+            scanf("%d", &cnt);
+            for (int j = 0; j < cnt; j++) scanf("%d", &balls[j]);
+            bags[i] = BuildHeap(cnt, balls);
+        }
+        
+        while (oprt--)
+        {
+            char cmd[5];
+            scanf("%s", cmd);
+            if (!strcmp(cmd, "pop"))
+            {
+                int bag;
+                scanf("%d", &bag);
+                if (tree.Top(bags[bag]))
+                {
+                    printf("%d\n", tree.Top(bags[bag]));
+                    bags[bag] = tree.Merge(tree.l[bags[bag]], tree.r[bags[bag]]);
+                }
+                else printf("-1\n");
+            }
+            if (!strcmp(cmd, "push"))
+            {
+                int bag, ball;
+                scanf("%d%d", &bag, &ball);
+                bags[bag] = tree.Insert(bags[bag], ball);
+            }
+            if (!strcmp(cmd, "mix"))
+            {
+                int lhs, rhs;
+                scanf("%d%d", &lhs, &rhs);
+                bags[lhs] = tree.Merge(bags[lhs], bags[rhs]);
+                bags[rhs] = 0;                                  // 不是bags[rhs] = Init(0)
+            }
+        }
+    }
 }
