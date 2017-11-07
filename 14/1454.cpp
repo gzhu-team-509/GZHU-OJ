@@ -17,7 +17,12 @@
 #include <algorithm>
 using namespace std;
 
-const int MAXN = 3010005;
+/**
+ * MAXN = 100010 失败
+ * MAXN = 300000 成功
+ *
+**/
+const int MAXN = 300010;
 
 struct Node
 {
@@ -107,7 +112,8 @@ int main()
                 if (tree.Top(bags[bag]))
                 {
                     printf("%d\n", tree.Top(bags[bag]));
-                    bags[bag] = tree.Merge(tree.l[bags[bag]], tree.r[bags[bag]]);
+                    bags[bag] = tree.Merge(tree.l[bags[bag]], tree.r[bags[bag]]);   
+                    // 每次Merge操作需要及时更新堆顶编号
                 }
                 else printf("-1\n");
             }
@@ -122,7 +128,8 @@ int main()
                 int lhs, rhs;
                 scanf("%d%d", &lhs, &rhs);
                 bags[lhs] = tree.Merge(bags[lhs], bags[rhs]);
-                bags[rhs] = 0;                                  // 不是bags[rhs] = Init(0)
+                bags[rhs] = 0;                                  
+                // 不是bags[rhs] = Init(0);
             }
         }
     }
