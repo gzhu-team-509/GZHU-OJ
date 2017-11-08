@@ -3,15 +3,13 @@
 #include <cstring>
 using namespace std;
 
-const int MAXN = 10010;
-
 int main()
 {
     int n;
     scanf("%d", &n);
     while (n--)
     {
-        char sea[MAXN], danger[MAXN];
+        char sea[10010], danger[15];
         scanf("%s%s", sea, danger);
 
         int exp = 0, smile = 0;
@@ -25,10 +23,13 @@ int main()
                  * 错误的写法是 if (strstr(ptr, danger) != NULL)
                  *
                 **/
-
-                char sub[strlen(danger) + 1];
-                strncpy(sub, ptr, strlen(danger));
-                if (strstr(sub, danger) != NULL)
+                
+                bool is_equal = true;
+                int length = strlen(danger);
+                for (int i = 1; i < length; i++) {
+                    if (ptr[i] != danger[i]) is_equal = false;
+                }
+                if (is_equal)
                 {
                     smile++;
                     continue;
