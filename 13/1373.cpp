@@ -1,4 +1,10 @@
-/* WRONG ANSWER */
+/** 
+ * Presentation Error
+ * 
+ * 11/08
+ * 此题测试数据有误，最后一次输出后不应该附加空行
+ * 要得到AC结果，请注释掉L60，取消注释L80
+**/
 #include <iostream>
 #include <cstdio>
 #include <algorithm>
@@ -16,7 +22,7 @@ bool cmp(node lhs, node rhs)
     if (lhs.mth != rhs.mth)
         return lhs.mth < rhs.mth;
     if (lhs.day != rhs.day)
-        return lhs.day < lhs.day;
+        return lhs.day < rhs.day;
     return lhs.activity > rhs.activity;
 }
 
@@ -72,5 +78,6 @@ int main()
                 }
             }
         }
+//!     cout << endl;
     }
 }
