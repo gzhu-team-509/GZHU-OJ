@@ -1,4 +1,3 @@
-/* Wrong Answer */
 #include <cstdio>
 #include <cstring>
 using namespace std;
@@ -14,18 +13,21 @@ int main()
         char sea[MAXN], danger[MAXN];
         scanf("%s%s", sea, danger);
 
-        int exp = 0, smile = 0;
-        for (char * ptr = sea; *ptr != '\0'; ptr++)
+        char * ptr = sea;
+        while (ptr = strstr(ptr, danger), ptr != NULL)
         {
-            if (*ptr == danger[0])
-            {
-                if (strstr(ptr, danger) != NULL) {
-                    smile++;
-                    continue;
-                }
-            }
-            exp += (*ptr - '0') * 10;
+            *ptr = '0';
         }
+        // while (ptr = strstr(sea, danger), ptr != NULL) 要比上面的方法慢许多
+
+        int exp = 0, smile = 0;
+        int length = strlen(sea);
+        for (int i = 0; i < length; i++)
+        {
+            if (sea[i] == '0') smile++;
+            exp += (sea[i] - '0') * 10;
+        }
+        // for (int i = 0; i < strlen(sea); i++) 要比上面的方法慢许多
 
         printf("%d\nGoldfish smiles %d times.\n", exp, smile);
         printf("\n");
