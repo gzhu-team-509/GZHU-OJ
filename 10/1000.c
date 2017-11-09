@@ -1,4 +1,8 @@
-/* 这是1000.c */
+/** 
+ * 这是1000.c 
+ *
+ *
+**/
 #include <stdio.h>
 
 int main(void)
