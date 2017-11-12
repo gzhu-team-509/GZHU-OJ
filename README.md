@@ -8,7 +8,7 @@
 | 4 | 10.17 | 内测3（1074） | `1382` `1385` `1198` `1200` `1201` `1202` | gzhuacmmomoto |
 | 5 | 10.24 | 周赛1（1078） | `1443` `1444` `1445` `1446` `1206` `1012` `1208` | gzhuacmolaola |
 | 6 | 10.31 | 周赛2（1079） | `1455` `1454` `1453` `1452` `1451` `1450` `1449` | gzhuacmolaola |
-| 7 | 11.07 | 15级自由赛：Only my railgun can shoot it（VJ197409） | gzhumudamuda |
+| 7 | 11.07 | 15级自由赛：Only my railgun can shoot it（VJ197409） | `HDU 1008` `POJ 2251` `HDU 2028` `HDU 1040` `HDU 2064` `HDU 2032` `HDU 2050` `HDU 1049` | gzhumudamuda |
 
 # GZHU-OJ资讯
 
