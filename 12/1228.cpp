@@ -12,8 +12,6 @@ int main()
         int todo = 0, day = 0;
         for (int i = 0; i < total; i++)
         {
-            cout << "todo " << todo << endl;
-
             todo += num[i];
             if (!todo) continue;
 
@@ -21,9 +19,10 @@ int main()
             if (todo < 0) todo = 0;
             day++;
         }
-        while (todo)
+        while (todo > 0)
         {
             todo -= ability;
+            day++;
         }
 
         cout << day << endl;
