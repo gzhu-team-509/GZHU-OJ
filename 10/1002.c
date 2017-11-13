@@ -5,7 +5,7 @@ int main(void)
 {
     char inword = 0;
     int ch, sum = 0;
-    while((ch=getchar())!=EOF)
+    while((ch = getchar()) != EOF)
     {
         if(ch == '\n'){
             ch = getchar();
