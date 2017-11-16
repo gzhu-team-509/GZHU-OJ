@@ -15,6 +15,5 @@ int main()
 		cout.flags(cout.fixed);
 		cout.precision(2);
 		cout << sum << endl;
-
 	}
 }
