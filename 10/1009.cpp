@@ -1,4 +1,4 @@
-// 小心数据边界（虽然现在int跟long一样大）
+// 数据边界意识
 #include <iostream>
 using namespace std;
 
