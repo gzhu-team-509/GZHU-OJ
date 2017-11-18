@@ -8,7 +8,7 @@ unsigned long cache[10000] = {0};
 
 int main()
 {
-	// ËØÊý´ò±í
+	// ç´ æ•°æ‰“è¡¨
 	int p = 0;
 	memset(cache, -1, sizeof(cache));
 	for (int i = 2; i <= 10000; i++)
