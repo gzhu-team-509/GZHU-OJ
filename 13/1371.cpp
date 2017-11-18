@@ -15,23 +15,25 @@ using namespace std;
 int main()
 {
     unsigned long long expansion[61][61] = {{0}, {0, 1}};
-    for(int line = 2; line <= 60; line++)
+    for (int line = 2; line <= 60; line++)
     {
-        for(int place=1; place<=line; place++)
+        for (int place = 1; place <= line; place++)
         {
             expansion[line][place] = expansion[line-1][place-1] + expansion[line-1][place];
         }
     }
 
     int line;
-    while(cin >> line)
+    while (cin >> line)
     {
-        for(int place=1; place<=line; place++)
+        for (int place=1; place<=line; place++)
         {
             cout << expansion[line][place];
-            if(place!=line){
+            if (place!=line){
                 cout << " ";
-            }else{
+            }
+            else
+            {
                 cout << endl;
             }
         }
