@@ -43,7 +43,7 @@ int main()
             {
                 cout << (-b + sqrt(delta)) / 2 * a  << " " << (-b - sqrt(delta)) / 2 * a << endl;
             }   
-            else if (delta = 0)
+            else if (delta == 0)
             {
                 cout << -b / 2 * a << endl;
             }
