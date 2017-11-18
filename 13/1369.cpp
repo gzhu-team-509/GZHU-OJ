@@ -13,7 +13,7 @@ long long jump(int);
 int main()
 {
     int stairs;
-    while(cin>>stairs)
+    while (cin>>stairs)
     {
         long long temp = jump(stairs);
         cout << temp << endl;
@@ -25,8 +25,8 @@ int main()
 
 long long jump(int stairs)
 {
-    if(stairs==1) return 1;
-    if(stairs==2) return 2;
-    if(cache[stairs]) return cache[stairs];
+    if (stairs==1) return 1;
+    if (stairs==2) return 2;
+    if (cache[stairs]) return cache[stairs];
     return jump(stairs-1) + jump(stairs-2);
 }
