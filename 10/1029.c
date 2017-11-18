@@ -3,10 +3,10 @@
 int main(void)
 {
     int count, sum, num;
-    while(scanf("%d", &count) != EOF)
+    while (scanf("%d", &count) != EOF)
     {
         sum = 0;
-        while(count--)
+        while (count--)
         {
             scanf("%d", &num);
             sum += num;

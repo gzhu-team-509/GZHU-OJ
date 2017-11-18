@@ -5,11 +5,11 @@ int main(void)
 {
     char inword = 0;
     int ch, sum = 0;
-    while((ch = getchar()) != EOF)
+    while ((ch = getchar()) != EOF)
     {
-        if(ch == '\n'){
+        if (ch == '\n'){
             ch = getchar();
-            if(ch == '#')
+            if (ch == '#')
             {
                 scanf("##");
                 getchar();
@@ -19,16 +19,16 @@ int main(void)
             }
             // 交由下面的情况来判断
         }
-        if(ispunct(ch)){
+        if (ispunct(ch)){
             inword = 0;
             sum++;
             continue;
         }
-        if(isspace(ch)){
+        if (isspace(ch)){
             inword = 0;
             continue;
         }
-        if(isalpha(ch) || isdigit(ch)){
+        if (isalpha(ch) || isdigit(ch)){
             if(!inword){
                 inword++;
                 sum++;
@@ -36,6 +36,4 @@ int main(void)
             continue;
         }
     }
-
-    return 0;
 }
