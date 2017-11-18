@@ -6,11 +6,14 @@ unsigned long long pow_and_mod(int a, int b, int c)
     unsigned long long ans = 1, base = a;
     while (b)
     {
-        if (b&1) ans *= base;
+        if (b&1) 
+        {
+            ans *= base;
+            ans %= c;
+        }
         base *= base;
-        b >>= 1;
         base %= c;
-        ans %= c;
+        b >>= 1;
     }
     return ans;
 }
