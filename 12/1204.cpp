@@ -1,4 +1,7 @@
-/* 这里不需要很高的精度，因此利用斐波那契数列数列的通项公式进行计算 */
+/**
+ * 这里不需要很高的精度，因此利用斐波那契数列数列的通项公式进行计算 
+ * 注意如果使用递推的方法，数组要定义成double类型
+**/
 #include <iostream>
 #include <cmath>
 using namespace std;
@@ -31,7 +34,9 @@ double fibonacci(int i)
 }
 
 
-/* 无法得出正确结果，斐波那契数列增长得很快，在给定范围内直接计算效率很低而且超出范围 */
+/* 无法得出正确结果，斐波那契数列增长得很快，在给定范围内直接计算会超出unsigned long long范围 */
+/* 如果要使用递推的方法，数组需要定义为double类型 */
+
 /*
 #include <iostream>
 using namespace std;
