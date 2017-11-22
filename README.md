@@ -9,6 +9,7 @@
 | 5 | 10.24 | 周赛1（1078） | `1443` `1444` `1445` `1446` `1206` `1012` `1208` | gzhuacmolaola |
 | 6 | 10.31 | 周赛2（1079） | `1455` `1454` `1453` `1452` `1451` `1450` `1449` | gzhuacmolaola |
 | 7 | 11.07 | 15级自由赛：Only my railgun can shoot it（VJ197409） | `HDU 1008` `POJ 2251` `HDU 2028` `HDU 1040` `HDU 2064` `HDU 2032` `HDU 2050` `HDU 1049` | gzhumudamuda |
+| 8 | 11.21 | 周赛（VJ200440） | `CF 1A` `CF 492A` `CF 118A` `HDU 1166` `CF 71A` `CF 734A` `HDU 1874` `CF 4B` `CF 4A` |
 
 # GZHU-OJ资讯
 
