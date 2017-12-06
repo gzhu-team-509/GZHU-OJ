@@ -30,19 +30,18 @@ int main()
 
         sort(item + 1, item + 1 + icnt, greater<int>());
 
-        long long cost = 0, dealed = 0;
+        // 将价格从小到大排列，每discount个使用一次折扣
+        long long cost = 0;
+        long long dealed = 0, cur = 0;
         while (dealed < icnt)
         {
-            if (((icnt - dealed) / discount) == 0)
+            if (cur == discount)
             {
-                cost += item[++dealed];
-            }
-            else
-            {
-                for (int i = 0; i < discount; i++)
-                    cost += item[++dealed];
+                cur = 0;
                 dealed += 2;
             }
+            cost += item[++dealed];
+            cur++;
         }
 
         printf("%lld\n", cost);
