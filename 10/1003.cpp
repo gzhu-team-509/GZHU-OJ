@@ -13,7 +13,7 @@ bool compare(string &a, string &b)
 }
 
 // 利用字符串a构造出比cmp代表的数字更大的字符串
-string make(string a, string cmp = "")
+string make(const string &a, string cmp = "")
 {
 	if (cmp == "") cmp = a;
 	bool isodd = a.size() % 2;
