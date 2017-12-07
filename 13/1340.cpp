@@ -10,7 +10,7 @@ int main()
         for (int i = 1; i<= n[0]; i++) cin >> n[i];
         cin >> m[0];
         for (int i = 1; i<= m[0]; i++) cin >> m[i];
-        int res = 1;
+        long long res = 1;
         for (int i = 1; i <= m[0]; i++) res *= n[m[i]];
         cout << res << endl;
     }
