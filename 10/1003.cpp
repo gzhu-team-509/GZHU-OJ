@@ -1,9 +1,6 @@
 #include <iostream>
 #include <string>
-#include <stack>
 using namespace std;
-
-stack<char> build;
 
 // 判断字符串a代表的数字是否小于字符串b代表的数字
 bool compare(string &a, string &b)
@@ -13,28 +10,19 @@ bool compare(string &a, string &b)
 }
 
 // 利用字符串a构造出比cmp代表的数字更大的字符串
-string make(const string &a, string cmp = "")
+string make(const string &a, string &cmp)
 {
-	if (cmp == "") cmp = a;
-	bool isodd = a.size() % 2;
+	string b = a.substr(0, (a.size() + 1) / 2);
 
-	for (int i = 0; i < a.size() / 2 + isodd; ++i)
+	for (int i = a.size() / 2 - 1; i >= 0; i--)
 	{
-		build.push(a[i]);
-	}
-
-	string b = a.substr(0, a.size() / 2);	
-
-	while (!build.empty())
-	{
-		b += build.top();
-		build.pop();
+		b += a[i];
 	}
 
 	if (compare(cmp, b)) return b;
 	else
 	{
-		for (int i = b.size() / 2 -(!isodd); i >= 0; --i)
+		for (int i = (b.size() + 1) / 2 - 1; i >= 0; --i)
 		{
 			if (b[i] == '9') {
 				b[i] = '0';
@@ -44,7 +32,7 @@ string make(const string &a, string cmp = "")
 			break;
 		}
 		if (b[0] == '0') b = "1" + b;
-		return make(b, a);
+		return make(b, cmp);
 	}
 }
 
@@ -54,6 +42,6 @@ int main()
 	string a;
 	while (cin >> a)
 	{
-		cout << make(a) << endl;
+		cout << make(a, a) << endl;
 	}
 }
