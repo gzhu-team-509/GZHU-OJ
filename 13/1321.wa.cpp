@@ -22,7 +22,7 @@ int main()
                 }
             }
         }
-
+        
         failure: cout << "0" << endl; continue;
         finishing: continue;
     }
