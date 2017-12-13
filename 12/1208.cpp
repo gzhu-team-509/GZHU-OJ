@@ -5,7 +5,7 @@ int main()
 {
     long input;
     long reverse, origin;
-    while (cin>>input)
+    while (cin >> input)
     {
         reverse = 0;
         origin = input;
@@ -14,9 +14,7 @@ int main()
             reverse = reverse * 10 + input % 10;
             input /= 10;
         }
-        if (origin==reverse) cout << "Yes" << endl;
+        if (origin == reverse) cout << "Yes" << endl;
         else cout << "No" << endl;
     }
-
-    return 0;
 }

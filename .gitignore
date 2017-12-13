@@ -1,15 +1,23 @@
 # Personal Environment Settings
 **/.vscode/*
+**/.vs/*
 
 # Source Files for Test
+/playground/*
 **/a.c
 **/a.cpp
 **/Main.java
 **/Main.class
 
-# Test Date
+# Template Files in Sepcific Folder
+*/template.*
+
+# Test Data
+**/in
+**/out
 **/in.txt
 **/out.txt
 
 # Binary Files for Test
 **/*.exe
+**/*.obj

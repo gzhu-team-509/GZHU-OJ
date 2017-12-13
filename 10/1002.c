@@ -1,15 +1,16 @@
 #include <stdio.h>
 #include <ctype.h>
+#include <stdbool.h>
 
 int main(void)
 {
-    char inword = 0;
+    bool inword = false;
     int ch, sum = 0;
-    while((ch=getchar())!=EOF)
+    while ((ch = getchar()) != EOF)
     {
-        if(ch == '\n'){
+        if (ch == '\n'){
             ch = getchar();
-            if(ch == '#')
+            if (ch == '#')
             {
                 scanf("##");
                 getchar();
@@ -19,23 +20,21 @@ int main(void)
             }
             // 交由下面的情况来判断
         }
-        if(ispunct(ch)){
-            inword = 0;
+        if (ispunct(ch)){
+            inword = false;
             sum++;
             continue;
         }
-        if(isspace(ch)){
-            inword = 0;
+        if (isspace(ch)){
+            inword = false;
             continue;
         }
-        if(isalpha(ch) || isdigit(ch)){
+        if (isalpha(ch) || isdigit(ch)){
             if(!inword){
-                inword++;
+                inword = true;
                 sum++;
             }
             continue;
         }
     }
-
-    return 0;
 }
