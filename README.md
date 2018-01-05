@@ -16,15 +16,13 @@
 
 # GZHU-OJ资讯
 
-https://www.gzhuacm.cn/ （暂不可用，12.13）
-
 http://172.22.27.1 （广大内网）
 
 广州大学也有OJ啦，感谢[@KIDx](https://github.com/KIDx)、TT_last、 Sine等学长们的付出为我们新生创建了一个良好的环境。
 
-By the way，广大OJ的袍泽兄弟是[ACdream Online Judge](http://acdream.info/)
+BTW，广大OJ的袍泽兄弟是[ACdream Online Judge](http://acdream.info/)
 
 # 帮助
 
-- **新手指引** https://www.gzhuacm.cn/topic/100
-- **资源站点** http://172.22.27.1/Downloads/ （广大内网）
+- **新手指引** http://172.22.27.1/topic/100
+- **资源站点** http://172.22.27.1/Downloads/
