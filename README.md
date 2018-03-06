@@ -14,6 +14,10 @@
 | 10 | 12.09 | [广东工业大学2017新生赛网络同步赛](http://acm.hdu.edu.cn/contests/contest_show.php?cid=788) |  | |
 | 11 | 12.10 | 2017新生选拔赛 | `1456` `1457` `1458` `1459` `1460` `1461` `1462` `1463` `1464` `1465` `1466` `1467` `1468` `1469` | [ly](https://github.com/lightyears1998/gzhu-coder/tree/master/freshman/contest/NEW-MAN) |
 | 12 | 01.24 | 倒数第二次周赛 | | [ly](https://github.com/lightyears1998/gzhu-coder/tree/master/acm/gzu/180121%20-%20%E5%80%92%E6%95%B0%E7%AC%AC%E4%BA%8C%E6%AC%A1%E5%91%A8%E8%B5%9B) |
+| 13 | 01.24 | 广州大学寒假倒数第二次周赛 | |  |
+| 14 | 01.29 | 广州大学寒假最后一次周赛 | |  |
+| 15 | 02.04 | 广州大学寒假倒数第二次周赛 | | happynewyear |
+| 16 | 03.06 | GZHU第N次周赛 | | balabala |
 
 # GZHU-OJ资讯
 
