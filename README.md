@@ -18,7 +18,7 @@
 | 14 | 02.04 | 广州大学寒假最后一次周赛 | | happynewyear |
 | 15 | 03.06 | GZHU第N次周赛 | | balabala |
 
-# GZHU-OJ资讯
+# OJ资讯
 
 http://172.22.27.1 （广大内网）
 
