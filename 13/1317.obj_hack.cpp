@@ -1,7 +1,8 @@
 /* DIRTY HACK */
+
 #include <iostream>
 #include <string>
-class MyCout 
+class MyCout
 {
 public:
     MyCout()

@@ -8,7 +8,7 @@ int main()
 		sum1 = sum2 = 0;
 		if (m > n)
 		{
-			temp = m; m = n; n = temp; //可使用swap(a, b);
+			temp = m; m = n; n = temp;  //可使用swap(a, b);
 		}
 		for (i = m; i <= n; i++)
 		{
