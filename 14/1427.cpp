@@ -1,9 +1,3 @@
-/**
- * 链接：
- * https://www.gzhuacm.cn/problem?pid=1427
- *
- */
-
 // 别忘了末尾的空格哦
 
 #include <iostream>
