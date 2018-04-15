@@ -1,5 +1,3 @@
-/* 图像抖动 */
-
 #include <iostream>
 #include <string>
 using namespace std;
