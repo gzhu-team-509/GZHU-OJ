@@ -1,12 +1,6 @@
 /**
- * 链接：
- * https://www.gzhuacm.cn/problem?pid=1426
- *
- */
-
-/**
  * 题目分析：注意控制输出格式
- * 
+ *
  */
 
 // 消歧义：“输入只有一个实数n”不表示“只有一个测试用例”。 --来自我的14次WA
@@ -27,6 +21,6 @@ int main()
         cout.precision(2);      // 保留精度到后小数点两位
         cout << rmb << endl;
     }
-    
+
     return 0;
 }

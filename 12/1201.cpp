@@ -1,5 +1,3 @@
-/* https://gzhuacm.cn/problem?pid=1201 */
-
 /* 17/10/25 - 本题测试数据最后一行没有换行符！ */
 #include <iostream>
 #include <cstdio>

@@ -2,10 +2,10 @@
 using namespace std;
 
 // Struct BigNumber Begin
-// ÔËËã¹ı³ÌÒÔ¼°ÖĞ¼ä½á¹û²»ÄÜ³öÏÖ¸ºÊı 
-// ³ı·¨ÔËËãÊ±ÓàÊı±£´æÔÚÈ«¾Ö±äÁ¿dÖĞ
+// è¿ç®—è¿‡ç¨‹ä»¥åŠä¸­é—´ç»“æœä¸èƒ½å‡ºç°è´Ÿæ•°
+// é™¤æ³•è¿ç®—æ—¶ä½™æ•°ä¿å­˜åœ¨å…¨å±€å˜é‡dä¸­
 const int ten[4] = {1, 10, 100, 1000};
-const int maxL   = 1000; // ×î´óÎ»Êı 
+const int maxL   = 1000; // æœ€å¤§ä½æ•°
 
 struct BigNumber
 {
@@ -13,7 +13,7 @@ struct BigNumber
 	BigNumber(string s) {
 		int len=s.size();
 		d[0] = (len-1)/4+1;
-		
+
 		int i,j,k;
 		for (i=1; i<maxL; ++i) d[i]=0;
 		for (i=len-1; i>=0; --i) {
@@ -23,11 +23,11 @@ struct BigNumber
 		}
 		while (d[0]>1&&d[d[0]]==0) --d[0];
 	}
-	
+
 	BigNumber() {
 		*this = BigNumber(string("0"));
 	}
-	
+
 	string toString() {
 		string s("");
 		int i,j,temp;
@@ -45,7 +45,7 @@ struct BigNumber
 			}
 		}
 		return s;
-	} 
+	}
 } zero("0"), d, temp, midl[15];
 
 bool operator <(const BigNumber &a, const BigNumber &b) {
@@ -62,14 +62,14 @@ BigNumber operator +(const BigNumber &a, const BigNumber &b) {
 	for(i=1;i<=c.d[0];++i) {
 		x=a.d[i]+b.d[i]+x;
 		c.d[i]=x%10000;
-		x/=10000; 
-	} 
+		x/=10000;
+	}
 	while(x!=0) {
 		c.d[++c.d[0]]=x%10000;
 		x/=10000;
 	}
 	return c;
-} 
+}
 
 BigNumber operator -(const BigNumber &a, const BigNumber &b) {
 	BigNumber c;
@@ -104,7 +104,7 @@ BigNumber operator *(const BigNumber &a, const BigNumber &b) {
 bool smaller(const BigNumber &a, const BigNumber &b, int delta) {
 	if (a.d[0]+delta!=b.d[0]) return a.d[0]+delta<b.d[0];
 	int i;
-	for(i=a.d[0];i>0;--i) if(a.d[i]!=b.d[i+delta]) 
+	for(i=a.d[0];i>0;--i) if(a.d[i]!=b.d[i+delta])
 		return a.d[i]<b.d[i+delta];
 	return true;
 }
@@ -157,7 +157,7 @@ BigNumber operator /(const BigNumber &a, const BigNumber &b) {
 	c.d[0]=max(1,a.d[0]-b.d[0]+1);
 	while (c.d[0]>1 && c.d[c.d[0]]==0) --c.d[0];
 	return c;
-} 
+}
 // Struct BigNumber End
 
 int main()

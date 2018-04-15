@@ -1,9 +1,3 @@
-/**
- * 链接：
- * https://www.gzhuacm.cn/problem?pid=1428
- *
- */
-
 // 细节决定成败
 // 边界测试的重要性
 

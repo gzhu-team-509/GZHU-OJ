@@ -1,4 +1,3 @@
-/* https://www.gzhuacm.cn/problem?pid=1382 */
 /* 仿写自 http://paste.ubuntu.com/25758134/ */
 
 #include <iostream>
@@ -51,7 +50,7 @@ bool cmp(node a, node b)
        if (a.value[i] != b.value[i])
        return a.value[i] > b.value[i];
    }
-}   
+}
 
 int main()
 {

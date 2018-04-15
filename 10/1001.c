@@ -1,3 +1,5 @@
+// 布尔变量的使用
+
 #include <stdio.h>
 #include <stdbool.h>
 #include <ctype.h>
@@ -5,7 +7,7 @@
 int main(void)
 {
     int line;
-    scanf("%d\n", &line);
+    scanf("%d", &line);
     while (line--)
     {
         bool capslock = false;
@@ -23,6 +25,6 @@ int main(void)
         }
         putchar('\n');
     }
-    
+
     return 0;
 }

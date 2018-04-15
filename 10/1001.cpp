@@ -6,12 +6,12 @@ using namespace std;
 int main()
 {
     int n;
-    
+
     cin >> n;
     while (n--)
     {
         string a, b;
-        
+
         cin >> a;
         b.resize(a.size(), '\0');
 
@@ -31,7 +31,7 @@ int main()
                 count++;
             }
         }
-        b.resize(count);        // 如不重新调整size()会导致string中多余的空字符一并输出
+        b.resize(count);  // 如不重新调整size()会导致string中多余的空字符一并输出
         cout << b << endl;
     }
 }
