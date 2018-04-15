@@ -1,4 +1,5 @@
 /* 图像抖动 */
+
 #include <iostream>
 #include <string>
 using namespace std;
@@ -10,13 +11,13 @@ int main()
     {
         string dithered;
         cin >> dithered;
-        
+
         int x, y;
         cin >> x >> y;
-        
+
         string img = "";
         string tmp;
-        while (y--) 
+        while (y--)
         {
             cin >> tmp;
             img += tmp;
