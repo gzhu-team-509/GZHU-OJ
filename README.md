@@ -12,7 +12,8 @@
 | 8 | 11.21 | 周赛（VJ200440） | `CF 1A` `CF 492A` `CF 118A` `HDU 1166` `CF 71A` `CF 734A` `HDU 1874` `CF 4B` `CF 4A` | 公开 |
 | 9 | 12.02 | 2017新生选拔赛模拟赛 | 等待添加 | 公开 |
 | 10 | 12.09 | [广东工业大学2017新生赛网络同步赛](http://acm.hdu.edu.cn/contests/contest_show.php?cid=788) | 等待添加 |公开 |
-| 11 | 12.10 | 2017新生选拔赛 | 等待公开 | [ly](https://github.com/lightyears1998/gzhu-coder/tree/master/freshman/contest/NEW-MAN) |
+| 11 | 12.10 | 2017新生选拔赛 |  | [ly](https://github.com/lightyears1998/gzhu-coder/tree/master/freshman/contest/NEW-MAN) |
+| 12 | 04.10 | 2018校赛 |  |  |
 
 # GZHU-OJ资讯
 
