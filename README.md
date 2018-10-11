@@ -27,7 +27,7 @@ http://172.22.27.1 （广大内网）
 感谢在OJ平台上出题训练我们的学长们。
 感谢帮助过我们成长的所有人。
 
-BTW，广大OJ的袍泽兄弟是[ACdream Online Judge](http://acdream.info/)
+BTW，广大OJ的袍泽兄弟是[ACdream Online Judge（现已停服）](http://acdream.info/)
 
 # 帮助
 
